@@ -1,0 +1,111 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 60, 60);
+    color: rgb(234, 221, 200);
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(20, 60, 60, 0.9);
+    padding: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgb(214, 201, 180);
+}
+
+/* Success Container */
+.success-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Success Message */
+.success-message {
+    background-color: rgb(234, 221, 200);
+    color: rgb(20, 60, 60);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.success-message h2 {
+    margin-top: 0;
+    color: rgb(20, 60, 60);
+    font-size: 2em;
+}
+
+.success-message p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Transaction Details */
+.transaction-details {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.transaction-details h3 {
+    color: rgb(20, 60, 60);
+    margin: 15px 0 10px;
+}
+
+.transaction-details p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.transaction-details p strong {
+    display: inline-block;
+    width: 150px;
+}
+
+/* Cart Items */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(20, 60, 60);
+}
+
+/* Total Price */
+.transaction-details p strong {
+    font-weight: bold;
+}
+
+/* Return to Home Button */
+button {
+    background-color: rgb(20, 60, 60);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px auto 0;
+}
+
+button:hover {
+    background-color: rgb(40, 80, 80);
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(20, 60, 60, 0.9);
+    padding: 12px;
+    font-size: 0.9em;
+}

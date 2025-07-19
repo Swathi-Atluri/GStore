@@ -1,0 +1,141 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 60, 60);
+    color: rgb(234, 221, 200);
+    text-align: center;
+}
+
+#goBackButton {
+    background-color: rgb(234, 221, 200); 
+    color: rgb(20, 60, 60); /* Text color */
+    padding: 10px 15px;
+    border: 2px solid rgb(234, 221, 200); 
+    border-radius: 5px; 
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    font-size: 1 em;
+}
+
+/* Checkout Container */
+.checkout-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Checkout Form */
+.checkout-form {
+    background-color: rgb(234, 221, 200);
+    color: rgb(20, 60, 60);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.checkout-form h2 {
+    margin-top: 0;
+    color: rgb(20, 60, 60);
+    font-size: 2em;
+    text-align: center;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h3 {
+    color: rgb(20, 60, 60);
+    margin-bottom: 15px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(20, 60, 60);
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.form-section textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+/* Error Messages */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+/* Cart Summary */
+.cart-summary {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(20, 60, 60, 0.1);
+    border-radius: 8px;
+}
+
+.cart-summary h3 {
+    margin-top: 0;
+    color: rgb(20, 60, 60);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(20, 60, 60);
+}
+
+.cart-summary p {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Confirm Purchase Button (matching account.css button style) */
+button {
+    background-color: rgb(20, 60, 60);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(40, 80, 80);
+}
+
+/* Footer Styling (matching index.css and shop.css) */
+footer {
+    background-color: rgba(20, 60, 60, 0.9);
+    padding: 12px;
+    font-size: 0.9em;
+}

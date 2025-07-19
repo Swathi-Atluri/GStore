@@ -1,0 +1,166 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 60, 60);
+    color: rgb(234, 221, 200);
+    text-align: center;
+}
+
+/* Header Styling (matching login.css) */
+header {
+    background-color: rgba(20, 60, 60, 0.9);
+    padding: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: rgb(214, 201, 180);
+}
+
+/* Navigation Bar (updated to be fixed, removed animation) */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 228, 206);
+    padding: 12px 25px;
+    border-radius: 12px;
+    position: fixed; /* Changed from sticky to fixed */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Removed the fadeInDown animation and keyframes */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(20, 60, 60);
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgb(20, 60, 60);
+    color: rgb(234, 221, 200);
+}
+
+/* Active Link Styling */
+.nav-links a.active {
+    background-color: rgb(20, 60, 60);
+    color: rgb(234, 221, 200);
+    cursor: default; /* Indicate that the link is not clickable */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle inset shadow for depth */
+}
+
+.nav-links a.account-link {
+    background-color: rgb(20, 60, 60);
+    color: rgb(234, 221, 200);
+    border: 2px solid rgb(20, 60, 60);
+    padding: 8px 13px;
+}
+
+
+/* Account Container (matching login-container in login.css) */
+.account-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Account Details (matching login-form in login.css) */
+.account-details {
+    background-color: rgb(234, 221, 200);
+    color: rgb(20, 60, 60);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
+
+.account-details h2 {
+    margin-top: 0;
+    color: rgb(20, 60, 60);
+    font-size: 2em;
+    text-align: center;
+}
+
+.details-section {
+    margin-bottom: 20px;
+}
+
+.details-section h3 {
+    color: rgb(20, 60, 60);
+    margin-bottom: 15px;
+}
+
+.details-section p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.details-section p strong {
+    display: inline-block;
+    width: 150px;
+}
+
+/* Button Styling (for Logout button) */
+button {
+    background-color: rgb(20, 60, 60);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px; /* Add spacing between buttons */
+}
+
+button:hover {
+    background-color: rgb(40, 80, 80);
+}
+
+/* Continue Shopping Button Styling */
+button.continue-shopping {
+    background-color: rgb(50, 100, 100); /* Slightly lighter shade for distinction */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.1s; /* Add transform for hover effect */
+}
+
+button.continue-shopping:hover {
+    background-color: rgb(70, 120, 120); /* Lighter hover effect */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Continue Shopping Container */
+.continue-shopping-container {
+    text-align: center;
+    margin-top: 40px; /* Increased space above the button */
+    margin-bottom: 30px; /* Increased space below the button, before the footer */
+}
+
+/* Footer Styling (matching login.css) */
+footer {
+    background-color: rgba(20, 60, 60, 0.9);
+    padding: 12px;
+    font-size: 0.9em;
+}
