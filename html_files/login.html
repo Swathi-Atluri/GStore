@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Store | Login</title>
+    <link rel="stylesheet" href="../css_files/login.css">
+    <script src="../js_files/login.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="account.html">Account</a>
+        </div>
+    </nav>
+
+    <!-- Login Header -->
+    <header>
+        <h1>Login</h1>
+    </header>
+
+    <!-- Login Container -->
+    <section class="login-container">
+        <div class="login-form">
+            <h2>Sign In</h2>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-section">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 G-Store | Your Campus Lifestyle Hub
+    </footer>
+</body>
+</html>

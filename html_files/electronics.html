@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Store | Electronics</title>
+    <link rel="stylesheet" href="../css_files/shop_pages.css">
+    <script src="../js_files/shop_pages.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="fashion.html">Fashion</a>
+                <a href="electronics.html" class="select-link">Gadgets & Gear</a>
+                <a href="stationery.html">Stationery</a>
+                <a href="acc.html">Accessories</a>
+                <a href="account.html">Account</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchProducts()">
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+        <div class="cart-dropdown" id="cartDropdown">
+            <h3>Your Cart</h3>
+            <div id="cartItems"></div>
+            <p>Total: ₹<span id="cartTotal">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <h2>Exclusive College Electronics Collection</h2>
+    </section>
+
+    <section class="products">
+        <div class="product-card" data-product-name="Laptop Case">
+            <img src="../img/lapcase.jpg" alt="Laptop Case">
+            <p class="product-title">Laptop Case</p>
+            <p class="price">₹369</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Laptop Case', 369)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-product-name="Earbuds Case">
+            <img src="../img/pods.jpg" alt="Earbuds Case">
+            <p class="product-title">Earbuds Case</p>
+            <p class="price">₹249</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Earbuds Case', 249)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-product-name="Phone Case">
+            <img src="../img/phone_case.jpg" alt="Phone Case">
+            <p class="product-title">Phone Case</p>
+            <p class="price">₹299</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Phone Case', 299)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-product-name="Wireless Headphones">
+            <img src="../img/headphone.jpg" alt="Headphones">
+            <p class="product-title">Wireless Headphones</p>
+            <p class="price">₹1499</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Wireless Headphones', 1499)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 G-Store | Your Campus Lifestyle Hub
+    </footer>
+</body>
+</html>

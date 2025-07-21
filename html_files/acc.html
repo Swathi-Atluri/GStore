@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Store | Accessories</title>
+    <link rel="stylesheet" href="../css_files/shop_pages.css">
+    <script src="../js_files/shop_pages.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="fashion.html">Fashion</a>
+                <a href="electronics.html">Gadgets & Gear</a>
+                <a href="stationery.html">Stationery</a>
+                <a href="acc.html" class="select-link">Accessories</a>
+                <a href="account.html">Account</a>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchProducts()">
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+        <div class="cart-dropdown" id="cartDropdown">
+            <h3>Your Cart</h3>
+            <div id="cartItems"></div>
+            <p>Total: ₹<span id="cartTotal">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="banner">
+        <h2>Trendy Accessories</h2>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="product-card" data-product-name="Coffee Mug">
+            <img src="../img/mug.jpg" alt="Coffee Mug">
+            <p class="product-title">Coffee Mug</p>
+            <p class="price">₹299</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Coffee Mug', 299)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-product-name="Stylish Backpack">
+            <img src="../img/backpack.jpg" alt="Backpack">
+            <p class="product-title">Stylish Backpack</p>
+            <p class="price">₹1499</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Stylish Backpack', 1499)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-product-name="Eco-friendly Tote Bag">
+            <img src="../img/totebag.jpg" alt="Tote Bag">
+            <p class="product-title">Eco-friendly Tote Bag</p>
+            <p class="price">₹499</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Eco-friendly Tote Bag', 499)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-product-name="Keychain Charms">
+            <img src="../img/charms.jpg" alt="Keychain Charms">
+            <p class="product-title">Keychain Charms</p>
+            <p class="price">₹199</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Keychain Charms', 199)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-product-name="Cool Badges">
+            <img src="../img/badges.jpg" alt="Cool Badges">
+            <p class="product-title">Cool Badges</p>
+            <p class="price">₹149</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Cool Badges', 149)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 G-Store | Your Campus Lifestyle Hub
+    </footer>
+
+</body>
+</html>

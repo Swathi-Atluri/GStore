@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Store | Shop</title>
+    <link rel="stylesheet" href="../css_files/shop.css"> 
+    <script src="../js_files/shop_pages.js"></script>
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar">
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="shop-link">Shop</a>
+            <a href="account.html">Account</a>
+        </div>
+        <div class="search-bar">
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+        <div class="cart-dropdown" id="cartDropdown">
+            <div id="cartItems"></div>
+            <p>Total: ₹<span id="cartTotal">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Explore Categories</h1>
+    </header>
+
+    <!-- Category Container -->
+    <section class="category-container">
+        <div class="category-card" onclick="window.location.href='fashion.html'">
+            Fashion
+        </div>
+        <div class="category-card" onclick="window.location.href='electronics.html'">
+            Gadgets & Gear
+        </div>
+        <div class="category-card" onclick="window.location.href='stationery.html'">
+            Stationery
+        </div>
+        <div class="category-card" onclick="window.location.href='acc.html'">
+            Accessories
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 G-Store | Your Campus Lifestyle Hub
+    </footer>
+</body>
+</html>

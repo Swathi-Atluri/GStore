@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Store | Stationery</title>
+    <link rel="stylesheet" href="../css_files/shop_pages.css">
+    <script src="../js_files/shop_pages.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="fashion.html">Fashion</a>
+            <a href="electronics.html">Gadgets & Gear</a>
+            <a href="stationery.html" class="select-link">Stationery</a>
+            <a href="acc.html">Accessories</a>
+            <a href="account.html">Account</a>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchProducts()">
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒 <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+
+        <div class="cart-dropdown" id="cartDropdown">
+            <h3>Your Cart</h3>
+            <div id="cartItems"></div>
+            <p>Total: ₹<span id="cartTotal">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="banner">
+        <h2>Essential Stationery</h2>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="product-card" data-product-name="Premium Pen Set">
+            <img src="../img/pens.jpg" alt="Pen Set">
+            <p class="product-title">Premium Pen Set</p>
+            <p class="price">₹99</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Premium Pen Set', 99)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-product-name="Folder">
+            <img src="../img/folder.jpg" alt="Folder">
+            <p class="product-title">Folder</p>
+            <p class="price">₹149</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Folder', 149)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-product-name="Spiral Notebook">
+            <img src="../img/book.jpg" alt="Notebook">
+            <p class="product-title">Spiral Notebook</p>
+            <p class="price">₹99</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Spiral Notebook', 99)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-product-name="Leather Diary">
+            <img src="../img/diary.jpg" alt="Diary">
+            <p class="product-title">Leather Diary</p>
+            <p class="price">₹299</p>
+            <div class="button-container">
+                <button class="add-to-cart-btn" onclick="addToCart('Leather Diary', 299)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 G-Store | Your Campus Lifestyle Hub
+    </footer>
+
+
+</body>
+</html>

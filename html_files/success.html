@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Store | Transaction Successful</title>
+    <link rel="stylesheet" href="../css_files/success.css">
+    <script src="../js_files/success.js"></script>
+</head>
+<body>
+    <!-- Success Header -->
+    <header>
+        <h1>Transaction Successful!</h1>
+    </header>
+
+    <!-- Success Container -->
+    <section class="success-container">
+        <div class="success-message">
+            <h2>Thank You for Your Purchase!</h2>
+            <p>Your order has been placed successfully. Below are the details of your transaction.</p>
+
+            <!-- Transaction Details -->
+            <div class="transaction-details">
+                <h3>Shipping Information</h3>
+                <p><strong>Full Name:</strong> <span id="fullName"></span></p>
+                <p><strong>Address:</strong> <span id="address"></span></p>
+                <p><strong>City:</strong> <span id="city"></span></p>
+                <p><strong>Zip Code:</strong> <span id="zipCode"></span></p>
+
+                <h3>Your item will be delivered in 5 to 7 working days.</h3>
+                <p>Thank you for shopping with us!</p>
+               
+                <h3>Order Summary</h3>
+                <div id="cartItems"></div>
+                <p><strong>Total:</strong> ₹<span id="cartTotal"></span></p>
+            </div>
+
+            <!-- Button to Return to Home Page -->
+            <button onclick="returnToHome()">Return to Home Page</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 G-Store | Your Campus Lifestyle Hub
+    </footer>
+
+</body>
+</html>

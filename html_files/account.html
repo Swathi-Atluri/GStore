@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Store | Account</title>
+    <link rel="stylesheet" href="../css_files/account.css">
+    <script src="../js_files/account.js"></script>
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar">
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="shop-link">Shop</a>
+            <a href="account.html" class="account-link">Account</a>
+    </nav>
+
+    <!-- Account Header -->
+    <header>
+        <h1>Your Account</h1>
+    </header>
+
+    <!-- Account Container -->
+    <section class="account-container">
+        <div class="account-details">
+            <h2>Welcome, <span id="userName">User</span>!</h2>
+            <div class="details-section">
+                <h3>Account Details</h3>
+                <p><strong>Full Name:</strong> <span id="fullName">N/A</span></p>
+                <p><strong>Email:</strong> <span id="email">N/A</span></p>
+                <p><strong>Contact Number:</strong> <span id="contact">N/A</span></p>
+            </div>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <!-- Continue Shopping Button -->
+        <div class="continue-shopping-container">
+            <button onclick="continueShopping()" class="continue-shopping">Continue Shopping</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 G-Store | Your Campus Lifestyle Hub
+    </footer>
+
+</body>
+</html>
